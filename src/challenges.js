@@ -47,21 +47,33 @@ function highestCount(numeros) {
   return resultado;
   }
   
-  
-    
-  
-  
-
-
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  if(Math.abs(cat1 - mouse) < cat2 - mouse){
+  return 'cat1'
+} else if (cat1 - mouse > cat2 - mouse){
+  return 'cat2'
+} else {
+  return 'os gatos trombam e o rato foge'
+}
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(dividido) {
+  const vazio = []
+ for( let index = 0; index < dividido.length; index +=1)
+  if (dividido[index] % 3 === 0 && dividido[index] % 5 === 0){
+    vazio.push('fizzBuzz');
+  } else if (dividido[index] % 5 === 0){
+    vazio.push('buzz');
+  } else if (dividido[index] % 3 === 0){
+    vazio.push('fizz');
+  } else {
+    vazio.push('bug!')
+  }
+  return vazio;
 }
+
 
 // Desafio 9
 function encode() {
